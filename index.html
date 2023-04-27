@@ -1,0 +1,174 @@
+---
+layout: page
+title: Home
+subtitle:
+description:
+currentpage: home
+sitemap:
+priority: 1.0
+---
+<!-- Carousel Start -->
+<div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative" data-dot="<img src='assets/img/home/e-rick.jpg'>">
+            <img class="img-fluid" src="assets/img/home/e-rick.jpg" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown">Maxvolt Energy</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Custom lithium battery for your requirements</p>
+
+                            </p>
+                            <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel-item position-relative" data-dot="<img src='assets/img/home/E-Scooter-Battery.jpg'>">
+            <img class="img-fluid" src="assets/img/home/E-Scooter-Battery.jpg" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown">Maxvolt Energy</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Custom Lithium Battery For Your Requirements</p>
+                            <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="owl-carousel-item position-relative" data-dot="<img src='assets/img/home/energy_solutions.jpeg'>">
+            <img class="img-fluid" src="assets/img/home/energy_solutions.jpeg" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown">Maxvolt Energy</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Custom Lithium Battery For Your Requirements.</p>
+                            <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="owl-carousel-item position-relative" data-dot="<img src='assets/img/home/ecycle.jpg'>">
+            <img class="img-fluid" src="assets/img/home/ecycle.jpg" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown">Maxvolt Energy</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Custom Lithium Battery For Your Requirements.</p>
+                            <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="owl-carousel-item position-relative" data-dot="<img src='assets/img/home/soler.jpg'>">
+            <img class="img-fluid" src="assets/img/home/soler.jpg" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown">Maxvolt Energy</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Custom Lithium Battery For Your Requirements.</p>
+                            <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="owl-carousel-item position-relative" data-dot="<img src='assets/img/home/make_in_india_lion.jpg'>">
+            <img class="img-fluid" src="assets/img/home/make_in_india_lion.jpg" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown">Maxvolt Energy</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Custom Lithium Battery For Your Requirements.</p>
+                            <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<!-- Feature Start -->
+{% include fun_fact.html %}
+<!-- Feature Start -->
+
+
+
+{% include products.html %}
+
+<div class="container-xxl py-5">
+    <div class="container">
+	<div class="row">
+	<div class="col-md-4">
+        <h4 class="title-h4">Recent Happenings</h4>
+        {% for post in site.posts limit:10 %}
+        <a class="home-blog-update" href="{{post.url}}">{{post.title}}</a>
+        {% endfor %}
+    </div>
+	<div class="col-md-8">
+        <h4 class="title-h4">Corporate Gallery</h4>
+        {% include home_gallery.html %}
+    </div>
+	</div>
+	</div>
+	</div>
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h6 class="text-primary">Testimonial</h6>
+            <h1 class="mb-4">What Our Clients Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item text-center">
+
+                <div class="testimonial-text text-center rounded p-4">
+                    <p>Best company to produce solar lithium batteries.</p>
+                    <h5 class="mb-1">Client Name</h5>
+                    <span class="fst-italic">CS YOGESH GUPTA</span>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+
+                <div class="testimonial-text text-center rounded p-4">
+                    <p>Best e battery supplier in town, highly professional and timely delivery. Will surely recommend them.</p>
+                    <h5 class="mb-1">Client Name</h5>
+                    <span class="fst-italic"> CA. Shrikant Yadav </span>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+
+                <div class="testimonial-text text-center rounded p-4">
+                    <p>In terms of performance batteries are really good. We're using 60V 24Ah battery pack. It's working really good. They deliver on time. They installed battery in my scooter, very professional and knowledgeable team. Best wishes to team Maxvolt.</p>
+                    <h5 class="mb-1">Client Name</h5>
+                    <span class="fst-italic"> Deepak Singh Rawat</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
